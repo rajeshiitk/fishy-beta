@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/build/css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/login.js" defer></script>
+
+
+    <title>login</title>
+</head>
+
+<body class="w-full min-h-screen">
+
+    <div class="sticky top-0 z-10 mx-auto bg-purple-900 text-white">
+        <header class="mx-auto max-w-6xl">
+            <section class="mx-auto flex max-w-6xl items-center justify-between p-4">
+                <h1 class="text-3xl font-medium">
+                    <a href="#hero"> Fishy 🦈</a>
+                </h1>
+                <div>
+                    <button id="hamburger-button" class="relative h-8 w-8 cursor-pointer text-3xl md:hidden">
+                        <div
+                            class="absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-['']">
+                        </div>
+                        <!-- <i
+                              class="fa-solid fa-bars"></i> -->
+                    </button>
+                    <nav class="hidden space-x-8 text-xl md:block" aria-label="main">
+                        <a href="index.html#species" class="hover:opacity-90">Species</a>
+                        <a href="index.html#testimonials" class="hover:opacity-90 ">Testimonials</a>
+                        <a href="index.html#contact" class="hover:opacity-90">Contact</a>
+                        <a href="login.html" class="hover:opacity-90">Login</a>
+                      
+                    </nav>
+                </div>
+            </section>
+            <section id="mobile-menu"
+                class="top-68 md:none absolute hidden w-full origin-top animate-open-menu flex-col justify-center bg-black text-5xl">
+                <!-- <button class="text-8xl  w-full px-6">
+                      &times;
+                  </button> -->
+                <nav class="flex min-h-screen flex-col items-center py-8" aria-label="mobile">
+                    <a href="index.html" class="w-full py-6 text-center hover:opacity-90">Home</a>
+                    <a href="index.html#species" class="w-full py-6 text-center hover:opacity-90">Species</a>
+                    <a href="index.html#testimonials" class="w-full py-6 text-center hover:opacity-90">What they said</a>
+                    <a href="index.html#contact" class="w-full py-6 text-center hover:opacity-90">Contact Us</a>
+                    <a href="index.html#footer" class="w-full py-6 text-center hover:opacity-90">Address</a>
+                </nav>
+            </section>
+        </header>
+    </div>
+    <div class="container max-w-6xl flex py-16 ">
+        <div class="mx-auto max-w-lg min-w-[240px] flex flex-col dark:bg-slate-200 border border-slate-300 gap-4 min-h-fit shadow-lg rounded-xl p-4">
+            <div class="flex gap-2 ">
+                <span id="login" class="w-1/2 bg-purple-900 cursor-pointer p-1 rounded-full grid place-items-center">
+                    <h1 class="font-bold text-white  child  ">Login</h1>
+                </span>
+                <span id="sign-up" class="w-1/2 cursor-pointer  p-1 rounded-full grid place-items-center">
+                    <h2 class="font-bold  child">Sign Up</h2>
+                </span>
+            </div>
+        <form action="" id="login-form"
+            class="cursor-pointer mx-auto max-w-lg  flex flex-col dark:bg-slate-200  gap-4 rounded-xl p-4">
+            
+            <input type="email" name="emaillog" id="emaillog" placeholder="Email" class="p-1 focus:outline-purple-900"
+                required />
+            <input type="password" name="passwordlog" id="passwordlog" placeholder="Password"
+                class="p-1 focus:outline-purple-900 " required />
+
+
+            <a href="" class="self-end px-2 text-purple-900">Forgot Password</a>
+            <button type="submit" class="w-1/2 bg-purple-900 px-2 rounded-full grid place-items-center text-slate-100 self-center font-bold
+             ">Login
+            </button>
+            <p class="self-end px-2">New User? <a href="" id="new-user" class="text-purple-900 font-bold">Sign Up</a></p>
+        </form>
+        <form action="" id="sign-up-form"
+            class="hidden cursor-pointer mx-auto   flex-col dark:bg-slate-200  gap-4   rounded-xl p-4">
+            
+            <input type="text" name="name" id="name" placeholder="Name" class="p-1 focus:outline-purple-900 "
+                required />
+
+            <input type="email" name="email" id="email" placeholder="Email" class="p-1 focus:outline-purple-900"
+                required />
+
+                <input type="password" name="password" id="password" placeholder="password"
+                class="p-1 focus:outline-purple-900 " required />
+
+            <button type="submit" class="w-1/2 bg-purple-900 px-2 rounded-full grid place-items-center text-slate-100 self-center font-bold
+             ">Sign Up
+            </button>
+            <p class="self-end px-2">Already User? <a href="" class="text-purple-900 font-bold">Login</a></p>
+        </form>
+    </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
